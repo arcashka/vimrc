@@ -4,9 +4,6 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "bundle/vim-colorschemes"]
-	path = bundle/vim-colorschemes
-	url = https://github.com/flazz/vim-colorschemes.git
 [submodule "bundle/vim-two-firewatch"]
 	path = bundle/vim-two-firewatch
 	url = https://github.com/rakr/vim-two-firewatch.git
@@ -22,3 +19,6 @@
 [submodule "bundle/vim-airline-themes"]
 	path = bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "bundle/wimproved.vim"]
+	path = bundle/wimproved.vim
+	url = https://github.com/kkoenig/wimproved.vim.git
