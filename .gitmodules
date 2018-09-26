@@ -22,3 +22,6 @@
 [submodule "bundle/wimproved.vim"]
 	path = bundle/wimproved.vim
 	url = https://github.com/kkoenig/wimproved.vim.git
+[submodule "bundle/vim-ack"]
+	path = bundle/vim-ack
+	url = https://github.com/mileszs/ack.vim.git
