@@ -17,6 +17,7 @@ set incsearch
 set hlsearch
 set ignorecase
 set smartcase
+set scrolloff=5
 
 execute pathogen#infect()
 syntax on
