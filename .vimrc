@@ -74,6 +74,7 @@ map <leader>n : noh<CR>
 map <leader>f : cw<CR>
 map <leader>F : ccl<CR>
 map <leader>t : tabnew<CR>
+map <leader>T : terminal<CR>
 nnoremap <silent> <C-Right> : bn<CR>
 nnoremap <silent> <C-Left>  : bp<CR>
 
