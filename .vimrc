@@ -41,17 +41,37 @@ let g:ctrlp_cmd = 'CtrlP'
 
 let g:airline_theme='twofirewatch'
 
+let g:ack_mappings = {
+      \ "t": "<C-W><CR><C-W>Tzz",
+      \ "T": "<C-W><CR><C-W>TgT<C-W>j",
+      \ "o": "<CR>zz",
+      \ "O": "<CR><C-W>p<C-W>czz",
+      \ "go": "<CR><C-W>p",
+      \ "h": "<C-W><CR><C-W>Kzz",
+      \ "H": "<C-W><CR><C-W>K<C-W>b",
+      \ "v": "<C-W><CR><C-W>H<C-W>b<C-W>J<C-W>tzz",
+      \ "gv": "<C-W><CR><C-W>H<C-W>b<C-W>J" }
+
+let g:ackhighlight = 1
+
 set background=dark
 colorscheme two-firewatch
+
+highlight Search guibg = #df5f00
 
 "******************************************* MAPPING 
 map <C-G> : YcmCompleter GoTo<CR>
 map <C-n> : NERDTreeToggle<CR>
-map <C-j> : cn<CR>
-map <C-k> : cp<CR>
+map <C-j> : cn<CR>zz
+map <C-k> : cp<CR>zz
+map <leader>h : vertical resize -10<CR>
+map <leader>l : vertical resize +10<CR>
+map <leader>j : resize -10<CR>
+map <leader>k : resize +10<CR>
 map <leader>r : NERDTreeFind<CR>
 map <leader>n : noh<CR>
 map <leader>f : cw<CR>
+map <leader>F : ccl<CR>
 map <leader>t : tabnew<CR>
 nnoremap <silent> <C-Right> : bn<CR>
 nnoremap <silent> <C-Left>  : bp<CR>
