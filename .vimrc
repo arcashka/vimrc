@@ -59,6 +59,8 @@ let g:ack_mappings = {
 
 let g:ackhighlight = 1
 
+let g:sourcetrail_autostart = "true"
+
 set background=dark
 colorscheme two-firewatch
 
@@ -79,6 +81,8 @@ map <leader>f : cw<CR>
 map <leader>F : ccl<CR>
 map <leader>t : tabnew<CR>
 map <leader>T : terminal<CR>
+nnoremap <leader>as :SourcetrailRefresh<CR>
+nnoremap <leader>aa :SourcetrailActivateToken<CR>
 nnoremap <silent> <C-Right> : bn<CR>
 nnoremap <silent> <C-Left>  : bp<CR>
 
