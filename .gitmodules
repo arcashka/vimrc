@@ -25,3 +25,6 @@
 [submodule "bundle/vim-ack"]
 	path = bundle/vim-ack
 	url = https://github.com/mileszs/ack.vim.git
+[submodule "bundle/vim-sourcetrail"]
+	path = bundle/vim-sourcetrail
+	url = https://github.com/CoatiSoftware/vim-sourcetrail

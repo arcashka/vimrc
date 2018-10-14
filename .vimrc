@@ -25,7 +25,11 @@ filetype plugin indent on
 
 let mapleader = " "
 
-let g:ycm_global_ycm_extra_conf = '~/vimfiles/.ycm_extra_conf.py'
+if has ("win32")
+	let g:ycm_global_ycm_extra_conf = '~/vimfiles/.ycm_extra_conf.py'
+else
+	let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+endif
 
 let g:NERDTreeMapOpenSplit = 'h'
 let g:NERDTreeMapPreviewSplit = 'gh'
