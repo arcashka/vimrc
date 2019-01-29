@@ -6,7 +6,6 @@ set autoindent
 set smartindent
 set tabstop=4
 set shiftwidth=4
-set textwidth=120
 set tabstop=4
 set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
 set list
@@ -81,6 +80,8 @@ map <leader>f : cw<CR>
 map <leader>F : ccl<CR>
 map <leader>t : tabnew<CR>
 map <leader>T : terminal<CR>
+map <leader>q : q<CR>
+map <leader>w : w<CR>
 nnoremap <leader>as :SourcetrailRefresh<CR>
 nnoremap <leader>aa :SourcetrailActivateToken<CR>
 nnoremap <silent> <C-Right> : bn<CR>
@@ -100,7 +101,7 @@ if has("win32")
 	autocmd GUIEnter * silent! WToggleClean
 endif
 
-set guifont=Consolas:h14:cANSI
+set guifont=Consolas:h11:cANSI
 set backspace=2
 set backspace=indent,eol,start
 
