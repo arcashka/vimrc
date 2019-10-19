@@ -31,3 +31,7 @@
 [submodule "bundle/vim-papercolor"]
 	path = bundle/vim-papercolor
 	url = https://github.com/NLKNguyen/papercolor-theme.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe.git
+	branch = master
