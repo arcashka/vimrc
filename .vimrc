@@ -2,6 +2,7 @@ set enc=utf-8
 set fenc=utf-8
 set termencoding=utf-8
 set nocompatible
+set termguicolors
 set autoindent
 set smartindent
 set tabstop=4
@@ -10,13 +11,16 @@ set tabstop=4
 set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
 set list
 set number
-set termguicolors
 set laststatus=2
 set incsearch
 set hlsearch
 set ignorecase
 set smartcase
 set scrolloff=5
+set t_Co=256
+set ttimeout
+set ttimeoutlen=100
+set timeoutlen=3000
 
 execute pathogen#infect()
 syntax on
@@ -61,7 +65,7 @@ let g:ackhighlight = 1
 let g:sourcetrail_autostart = "true"
 
 set background=dark
-colorscheme two-firewatch
+colorscheme carbonized-dark
 
 highlight Search guibg = #df5f00
 
@@ -86,6 +90,7 @@ nnoremap <leader>as :SourcetrailRefresh<CR>
 nnoremap <leader>aa :SourcetrailActivateToken<CR>
 nnoremap <silent> <C-Right> : bn<CR>
 nnoremap <silent> <C-Left>  : bp<CR>
+nnoremap <buffer> <leader>p :exec '!clear && python' shellescape(@%, 1)<CR>
 
 "******************************************* WINDOWS specific
 if has("win32")
@@ -101,7 +106,7 @@ if has("win32")
 	autocmd GUIEnter * silent! WToggleClean
 endif
 
-set guifont=Consolas:h11:cANSI
+set guifont=Consolas:h14:cANSI
 set backspace=2
 set backspace=indent,eol,start
 
