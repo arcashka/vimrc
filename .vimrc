@@ -40,7 +40,7 @@ let g:NERDTreeMapPreviewSplit = 'gh'
 let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 1
 let g:cpp_class_decl_highlight = 1
-"let g:ycm_show_diagnostics_ui = 0
+let g:ycm_autoclose_preview_window_after_completion = 1
 
 let g:session_autosave='no'
 
