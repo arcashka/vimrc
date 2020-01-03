@@ -22,17 +22,20 @@ set ttimeout
 set ttimeoutlen=100
 set timeoutlen=3000
 
+if has ("win32")
+	let g:ycm_global_ycm_extra_conf = '~/vimfiles/.ycm_extra_conf.py'
+	set pythonthreedll=c:/Users/arcashka/AppData/Local/Programs/Python/Python38-32/python38.dll
+	set pythonthreehome=c:/Users/arcashka/AppData/Local/Programs/Python/Python38-32
+	silent! python3 1
+else
+	let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+endif
+
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
 let mapleader = " "
-
-if has ("win32")
-	let g:ycm_global_ycm_extra_conf = '~/vimfiles/.ycm_extra_conf.py'
-else
-	let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
-endif
 
 let g:NERDTreeMapOpenSplit = 'h'
 let g:NERDTreeMapPreviewSplit = 'gh'
@@ -61,8 +64,6 @@ let g:ack_mappings = {
       \ "gv": "<C-W><CR><C-W>H<C-W>b<C-W>J" }
 
 let g:ackhighlight = 1
-
-let g:sourcetrail_autostart = "true"
 
 set background=dark
 colorscheme carbonized-dark
@@ -96,13 +97,6 @@ nnoremap <buffer> <leader>p :exec '!clear && python' shellescape(@%, 1)<CR>
 if has("win32")
 	map <F11> <Esc> : WToggleFullscreen<CR>
 	map <F2>  <Esc> : WToggleClean<CR>
-	if has("gui_running")
-		if $VIM_FULLSCREEN_DLL_FIX
-		else
-			autocmd GUIEnter * call libcall("loadfixgvimborder.dll", "LoadFixGVimBorder", "#002B36")
-			let $VIM_FULLSCREEN_DLL_FIX = 1
-		endif
-	endif
 	autocmd GUIEnter * silent! WToggleClean
 endif
 
