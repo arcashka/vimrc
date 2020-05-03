@@ -32,9 +32,11 @@ else
 endif
 
 execute pathogen#infect()
+set runtimepath+=~/.vim/bundle/vim-maktaba/
+call glaive#Install()
 syntax on
 filetype plugin indent on
-
+let &t_ut=''
 let mapleader = " "
 
 let g:NERDTreeMapOpenSplit = 'h'
@@ -91,7 +93,8 @@ nnoremap <leader>as :SourcetrailRefresh<CR>
 nnoremap <leader>aa :SourcetrailActivateToken<CR>
 nnoremap <silent> <C-Right> : bn<CR>
 nnoremap <silent> <C-Left>  : bp<CR>
-nnoremap <buffer> <leader>p :exec '!clear && python' shellescape(@%, 1)<CR>
+nnoremap <buffer> <F9> :exec '!clear && python' shellescape(@%, 1)<CR>
+
 
 "******************************************* WINDOWS specific
 if has("win32")
