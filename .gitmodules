@@ -35,3 +35,12 @@
 	path = bundle/YouCompleteMe
 	url = https://github.com/ycm-core/YouCompleteMe.git
 	branch = master
+[submodule "bundle/vim-maktaba"]
+	path = bundle/vim-maktaba
+	url = https://github.com/google/vim-maktaba.git
+[submodule "bundle/vim-codefmt"]
+	path = bundle/vim-codefmt
+	url = https://github.com/google/vim-codefmt.git
+[submodule "bundle/vim-glaive"]
+	path = bundle/vim-glaive
+	url = https://github.com/google/vim-glaive.git
