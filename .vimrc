@@ -5,9 +5,9 @@ set nocompatible
 set termguicolors
 set autoindent
 set smartindent
-set tabstop=4
 set shiftwidth=4
 set tabstop=4
+set expandtab
 set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
 set list
 set number
@@ -68,7 +68,7 @@ let g:ack_mappings = {
 let g:ackhighlight = 1
 
 set background=dark
-colorscheme carbonized-dark
+colorscheme two-firewatch
 
 highlight Search guibg = #df5f00
 
@@ -89,6 +89,7 @@ map <leader>t : tabnew<CR>
 map <leader>T : terminal<CR>
 map <leader>q : q<CR>
 map <leader>w : w<CR>
+map <leader>c : CMakeConfigure<CR>
 nnoremap <leader>as :SourcetrailRefresh<CR>
 nnoremap <leader>aa :SourcetrailActivateToken<CR>
 nnoremap <silent> <C-Right> : bn<CR>
