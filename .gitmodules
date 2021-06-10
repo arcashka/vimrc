@@ -47,6 +47,6 @@
 [submodule "bundle/vim_cmake_integration"]
 	path = bundle/vim_cmake_integration
 	url = https://github.com/arcashka/vim_cmake_integration.git
-[submodule "/home/arcashka/.vim/bundle/jedi-vim"]
-	path = /home/arcashka/.vim/bundle/jedi-vim
+[submodule "bundle/jedi-vim"]
+	path = bundle/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
